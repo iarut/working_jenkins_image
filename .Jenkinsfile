@@ -7,7 +7,7 @@ pipeline {
 
        triggers {
                       pollSCM "*/3 * * * *"
-                      cron "13 7 * * * "
+                      cron "56 8 * * * "
                       GenericTrigger(
                                   causeString: "Triggered from Webhook",
                                   token: "unique-token-to-start-the-current-pipeline"
@@ -36,8 +36,8 @@ pipeline {
 
   stage('Build docker image') {
    steps {
-    sh 'docker build --tag=iarut/jenkins-build:latest .'
-    sh 'docker push iarut/jenkins-build:latest'
+    sh 'docker build --tag=iarut/jenkins-build123 .'
+    sh 'docker push iarut/jenkins-build123'
    }
   }
  }
