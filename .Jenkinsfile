@@ -5,6 +5,17 @@ pipeline {
   DOCKERHUB_CREDENTIALS=credentials('dockerhub-credentials')
  }
 
+triggers {
+       triggers {
+               pollSCM "*/30 * * * *"
+               cron "* 9 * * * "
+               GenericTrigger(
+                           causeString: "Triggered from Webhook",
+                           token: "unique-token-to-start-the-current-pipeline"
+                       )
+           }
+    }
+
  stages {
   stage('Checkout Github') {
    steps {
