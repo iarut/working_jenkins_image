@@ -7,7 +7,7 @@ pipeline {
 
        triggers {
                       pollSCM "*/3 * * * *"
-                      cron "* 9 * * * "
+                      cron "10 9 * * * "
 //                       GenericTrigger(
 //                                   causeString: "Triggered from Webhook",
 //                                   token: "unique-token-to-start-the-current-pipeline"
