@@ -14,6 +14,8 @@ public class Main {
             System.out.println("i = " + i);
         }
 
-        Cat123 cat = new Cat123();
+//        Cat123 cat = new Cat123();
+        System.out.println("xdd");
     }
 }
+
