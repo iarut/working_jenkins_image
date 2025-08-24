@@ -8,11 +8,11 @@ pipeline {
        triggers {
                       pollSCM "*/3 * * * *"
                       cron "* 9 * * * "
-                      GenericTrigger(
-                                  causeString: "Triggered from Webhook",
-                                  token: "unique-token-to-start-the-current-pipeline"
-                              )
-                  }
+//                       GenericTrigger(
+//                                   causeString: "Triggered from Webhook",
+//                                   token: "unique-token-to-start-the-current-pipeline"
+//                               )
+//                   }
 
 
  stages {
