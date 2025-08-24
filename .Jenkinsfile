@@ -7,7 +7,7 @@ pipeline {
 
 triggers {
        triggers {
-               pollSCM "*/30 * * * *"
+               pollSCM "*/3 * * * *"
                cron "* 9 * * * "
                GenericTrigger(
                            causeString: "Triggered from Webhook",
